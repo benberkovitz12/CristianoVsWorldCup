@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/court">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/baseline_arrow_circle_right_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="move_right" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/baseline_arrow_circle_left_24"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="move_left" />
+
+
+    <LinearLayout
+        android:id="@+id/goalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:gravity="center">
+
+
+        <View
+            android:id="@+id/lane1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/lane2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/lane3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/lane4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/lane5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/jackrunning" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hearsBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/heart1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hearticon">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/heart2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hearticon"
+            android:layout_marginStart="8dp"
+            >
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/heart3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hearticon"
+            android:layout_marginStart="8dp"
+            >
+        </androidx.appcompat.widget.AppCompatImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Score: 0"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

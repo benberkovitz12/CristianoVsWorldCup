@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/court"
+    >
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Help Jack!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/helpJackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP JACK!"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/helpJackTiltButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP JACK TILT!"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/helpJackButton"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/recordsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Records"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/helpJackTiltButton"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>
